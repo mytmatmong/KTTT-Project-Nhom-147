@@ -103,7 +103,7 @@ print(f"Tổng tốc độ truyền đạt: {best_fitness_ever:.3f} bps/Hz")
 print(f"Công suất phân bổ (W): {final_powers.round(3)}")
 print(f"Tổng công suất sử dụng: {np.sum(final_powers):.3f} W")
 
-# -------------------- VẼ ĐỒ THỊ (2 hình đẹp lung linh) --------------------
+# -------------------- VẼ ĐỒ THỊ --------------------
 plt.figure(figsize=(12, 5))
 
 # Hình 1: Hội tụ
@@ -125,4 +125,5 @@ plt.ylim(0, P_TOTAL/2)
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.suptitle('GA CỔ ĐIỂN - PHÂN BỔ CÔNG SUẤT TRUYỀN THÔNG VÔ TUYẾN', 
              fontsize=16, fontweight='bold', y=1.05)
+
 plt.show()
